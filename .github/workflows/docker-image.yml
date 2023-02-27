@@ -30,6 +30,7 @@ jobs:
         context: .
         file: ./amd64/Dockerfile
         platforms: linux/amd64
-        tags: engineers4cloud/trivy-scanner:`date`
+        run: CUSTOM_DATE=$(date +'%Y-%m-%d_%H-%M-%S')
+        tags: engineers4cloud/trivy-scanner:$CUSTOM_DATE
         push: true    
     
