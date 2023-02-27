@@ -6,6 +6,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 RUN yum update -y \
 && yum install -y shadow-utils curl jq wget \
+&& amazon-linux-extras install docker \
 && yum clean all \
 && rm -rf /var/cache/yum \
 && adduser --shell /bin/false --home /home/nopriv nopriv \
