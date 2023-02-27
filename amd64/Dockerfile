@@ -22,5 +22,3 @@ aws \
 && echo $TRIVY_VERSION \
 && wget -q "https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-64bit.rpm" \
 && yum install -y /trivy_${TRIVY_VERSION}_Linux-64bit.rpm
-
-USER nopriv
