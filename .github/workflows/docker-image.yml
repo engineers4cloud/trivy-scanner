@@ -30,6 +30,6 @@ jobs:
         context: .
         file: ./amd64/Dockerfile
         platforms: linux/amd64
-        tags: engineers4cloud/trivy-scanner:latest
+        tags: engineers4cloud/trivy-scanner:$(date +'%Y-%m-%d_%H-%M-%S')
         push: true    
     
